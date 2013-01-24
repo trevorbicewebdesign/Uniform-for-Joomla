@@ -9,9 +9,7 @@
 	<authorUrl>webdesign.trevorbice.com</authorUrl>
 	<version>1.0</version>
 	<description>
-	Joomla plugin to include <strong>Uniform:</strong>Sexy forms with jQuery.<br/> 
-	Click <a href="http://webdesign.trevorbice.com/">here</a> for other useful plugins
-	<a href="http://uniformjs.com/">Unform </a>
+	Joomla plugin to include Uniform: Sexy forms with jQuery.
 	</description>
 	<!--FILES TO INCLUDE -->
 	<files>
@@ -20,7 +18,6 @@
 		<folder>js</folder>
 		<folder>css</folder>
 		<folder>images</folder>
-		<folder>demo</folder>
 	</files>
 
 </extension>
