@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>TBWorks - Uniform Plugin</name>
+	<author>Trevor Bice Webdesign</author>
+	<creationDate>June 2013</creationDate>
+	<copyright>Copyright (C)2013 Trevor bice Webdesign. All rights reserved.</copyright>
+	<license>The MIT License (MIT)</license>
+	<authorEmail>trevorbicewebdesign@gmail.com</authorEmail>
+	<authorUrl>webdesign.trevorbice.com</authorUrl>
+	<version>1.0.1</version>
+	<description>
+		<![CDATA[
+		
+		<link rel="stylesheet" href="../plugins/system/uniform/assets/admin.css" type="text/css" />
+		<div id="extension-description">
+		<h1>Uniform Custom Fields</h1>
+		<p>Style your Checkboxes, Drop Down Menus, Radio Buttons, and File Inputs with the popular jQuery based plugin. 
+		Easily style all your Joomla CMS website's form fields by masking your standard form controls with custom themed 
+		controls. Works in sync with your real form elements to ensure maximum accessibility and compatibility.</p>
+		<ul class="checkbox">
+			<li>Style normally uncustomizable form elements</li>
+			<li>Runs on jQuery</li>
+			<li>Select from 3 themes or easily create your own</li>
+			<li>Great for RS Forms</li>
+		</ul>
+
+		<hr/>
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width>
+					<h4><a href="http://uniformjs.com/" target="_blank">Uniform Website</a></h4>
+				
+					<ul class="uniform-menu">
+						<li><a href="http://uniformjs.com/#intro" target="_blank">Intro</a></li>
+						<li><a href="http://uniformjs.com/#example" target="_blank">Examples</a></li>
+						<li><a href="http://uniformjs.com/#docs" target="_blank">Docs</a></li>
+						<li><a href="http://uniformjs.com/#themes" target="_blank">Themes</a></li>
+						<li class="last"><a href="http://uniformjs.com/#contribute" target="_blank">Contribute</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+		
+		<hr/>
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="top">
+				Brought to you by:<br/>
+				<a href="http://webdesign.trevorbice.com/" target="_blank">
+					<img src="../media/tbworks/images/tbwebdesignlogo.png"/>
+				</a>
+				</td>
+				<td>
+				</td>
+			</tr>
+		</table>
+
+		</div>
+		
+		]]>
+	</description>
+	<languages>
+        <language tag="en-GB">en-GB.mod_tbworks_uniform.ini</language>
+    </languages>
+	<files>
+		<filename plugin="uniform">uniform.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>themes</folder>
+	</files>
+	<config>
+        <fields name="params">
+            <fieldset addfieldpath="plugins/system/uniform/fields" name="basic">
+				<field name="" type="header" default=""  description="General" />
+                <field default="" description="Please select a theme." label="Themes" name="theme" type="themeselect"/>
+				<field default="front" description="Where should the plugin display?" label="Plugin Use" name="display" type="list">
+					<option value="front">Front-End Only</option>
+					<option value="back">Backend-End Only</option>
+					<option value="both">Both</option>
+				</field>
+				<field name="" type="header" default=""  description="Apply to Form Fields" />
+				<field default="1" description="Style form inputs." label="Style Inputs" name="style_input" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				<field default="1" description="Style textarea inputs." label="Style Textareas" name="style_textarea" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field default="1" description="Style radio buttons." label="Style Radios" name="style_radio" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field default="1" description="Style checkboxes." label="Style Checkboxes" name="style_checkbox" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field default="1" description="Style dropdowns." label="Style Dropdowns" name="style_dropdown" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field default="1" description="Style file uploads." label="Style File Upload" name="style_file" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="" type="header" default=""  description="jQuery" />
+				
+				<field default="1" description="Turn no conflict on or off" label="jQuery No Conflict" name="noconflict" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
