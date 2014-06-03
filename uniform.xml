@@ -80,7 +80,7 @@
 					<option value="back"	>UFJ_FRONT_OP2</option>
 					<option value="both"	>UFJ_FRONT_OP3</option>
 				</field>
-				<field name="" type="header" default=""  description="USJ_FORM_FIELDS_DESC" />
+				<field name="" type="header" default=""  description="Apply to Form Fields" />
 				<field default="1" description="USJ_STYLE_INPUT_DESC" label="USJ_STYLE_INPUT_LABEL" name="style_input" type="radio">
 					<option value="0">UFJ_NO</option>
 					<option value="1">UFJ_YES</option>
