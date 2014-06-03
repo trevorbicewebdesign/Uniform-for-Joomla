@@ -56,9 +56,9 @@
 			
 			</div>]]>
 	</description>
-	<languages>
+	<languages folder="administrator/language/en-GB">
 		<language tag="en-GB">en-GB.plg_system_uniform</language>
-	</languages>
+	</languages>	
 	<media folder="media" destination="tbworks">
 		<folder>css</folder>
 		<folder>images</folder>
