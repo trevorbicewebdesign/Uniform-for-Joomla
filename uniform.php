@@ -1,10 +1,7 @@
 <?php
 /* TREVOR BICE WEBDESIGN - webdesign.trevorbice.com */
 defined('JPATH_BASE') or die;
-
-class plgSystemUniform extends JPlugin
-
-{
+class plgSystemUniform extends JPlugin {
 	function __construct(&$subject, $config) {
 		parent::__construct($subject, $config);
 	}
@@ -50,8 +47,6 @@ class plgSystemUniform extends JPlugin
 				$("'.$fieldtypes.'").uniform();	
 			});
 			';
-			
-			//print_r($this->params);
 			if($display=='front') {
 				if($mainframe->isSite()) {
 						$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/jquery.uniform.js');

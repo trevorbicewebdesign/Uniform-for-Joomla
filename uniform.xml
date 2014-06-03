@@ -7,7 +7,7 @@
 	<license>The MIT License (MIT)</license>
 	<authorEmail>trevorbicewebdesign@gmail.com</authorEmail>
 	<authorUrl>webdesign.trevorbice.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.1</version>
 	<description>
 		<![CDATA[<link rel="stylesheet" href="../plugins/system/uniform/assets/admin.css" type="text/css" />
 			<div id="extension-description">
@@ -68,7 +68,6 @@
 		<filename>index.html</filename>
 		<folder>assets</folder>
 		<folder>fields</folder>
-		<folder>css</folder>
 		<folder>themes</folder>
 	</files>
 	<config>
