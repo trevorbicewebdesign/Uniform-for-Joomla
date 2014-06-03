@@ -57,7 +57,7 @@
 			</div>]]>
 	</description>
 	<languages>
-		<language tag="en-GB">en-GB.mod_tbworks_uniform.ini</language>
+		<language tag="en-GB">en-GB.plg_system_uniform</language>
 	</languages>
 	<media folder="media" destination="tbworks">
 		<folder>css</folder>
@@ -76,41 +76,41 @@
 		<fields name="params">
 			<fieldset addfieldpath="plugins/system/uniform/fields" name="basic">
 				<field name="" type="header" default=""  description="General" />
-				<field default="" description="Please select a theme." label="Themes" name="theme" type="themeselect"/>
-				<field default="front" description="Where should the plugin display?" label="Plugin Use" name="display" type="list">
-					<option value="front">Front-End Only</option>
-					<option value="back">Backend-End Only</option>
-					<option value="both">Both</option>
+				<field default="" description="UFJ_THEME_DESC" label="UFJ_THEME_LABEL" name="theme" type="themeselect"/>
+				<field default="front" description="UFJ_FRONT_DESC" label="UFJ_FRONT_LABEL" name="display" type="list">
+					<option value="front"	>UFJ_FRONT_OP1</option>
+					<option value="back"	>UFJ_FRONT_OP2</option>
+					<option value="both"	>UFJ_FRONT_OP3</option>
 				</field>
-				<field name="" type="header" default=""  description="Apply to Form Fields" />
-				<field default="1" description="Style form inputs." label="Style Inputs" name="style_input" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field name="" type="header" default=""  description="USJ_FORM_FIELDS_DESC" />
+				<field default="1" description="USJ_STYLE_INPUT_DESC" label="USJ_STYLE_INPUT_LABEL" name="style_input" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
-				<field default="1" description="Style textarea inputs." label="Style Textareas" name="style_textarea" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field default="1" description="USJ_STYLE_TEXTAREA_DESC" label="USJ_STYLE_TEXTAREA_LABEL" name="style_textarea" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
-				<field default="1" description="Style radio buttons." label="Style Radios" name="style_radio" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field default="1" description="USJ_STYLE_RADIO_DESC" label="USJ_STYLE_RADIO_LABEL" name="style_radio" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
-				<field default="1" description="Style checkboxes." label="Style Checkboxes" name="style_checkbox" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field default="1" description="USJ_STYLE_CHECKBOX_DESC" label="USJ_STYLE_CHECKBOX_LABEL" name="style_checkbox" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
-				<field default="1" description="Style dropdowns." label="Style Dropdowns" name="style_dropdown" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field default="1" description="USJ_STYLE_DROPDOWN_DESC" label="USJ_STYLE_DROPDOWN_LABEL" name="style_dropdown" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
-				<field default="1" description="Style file uploads." label="Style File Upload" name="style_file" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field default="1" description="USJ_STYLE_FILEUPLOAD_DESC" label="USJ_STYLE_FILEUPLOAD_LABEL" name="style_file" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
 				<field name="" type="header" default=""  description="jQuery" />
-				<field default="1" description="Turn no conflict on or off" label="jQuery No Conflict" name="noconflict" type="radio">
-					<option value="0">No</option>
-					<option value="1">Yes</option>
+				<field default="1" description="USJ_NOCONFLICT_DESC" label="USJ_NOCONFLICT_LABEL" name="noconflict" type="radio">
+					<option value="0">UFJ_NO</option>
+					<option value="1">UFJ_YES</option>
 				</field>
 			</fieldset>
 		</fields>
