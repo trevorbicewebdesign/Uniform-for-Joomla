@@ -13,7 +13,7 @@ class plgSystemUniform extends JPlugin
 		$noconflict		= $this->params->get('noconflict');	
 		$doc->addScript("//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js");
 		if($noconflict == 1) {
-			$doc->addScript(JURI::root(true) . '/plugins/system/uniform/js/noconflict.js');
+			$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/noconflict.js');
 		}
 		
 	}
@@ -54,20 +54,20 @@ class plgSystemUniform extends JPlugin
 			//print_r($this->params);
 			if($display=='front') {
 				if($mainframe->isSite()) {
-						$doc->addScript(JURI::root(true) . '/plugins/system/uniform/js/jquery.uniform.js');
+						$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/jquery.uniform.js');
 						$doc->addStyleSheet(JURI::root(true) . '/plugins/system/uniform/themes/'.$theme.'/css/uniform.css');
 						$doc->addScriptDeclaration($loadUniform);
 				}
 			}
 			else if($display=='back') {
 				if(!$mainframe->isSite()) {
-						$doc->addScript(JURI::root(true) . '/plugins/system/uniform/js/jquery.uniform.js');
+						$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/jquery.uniform.js');
 						$doc->addStyleSheet(JURI::root(true) . '/plugins/system/uniform/themes/'.$theme.'/css/uniform.css');
 						$doc->addScriptDeclaration($loadUniform);
 				}
 			}
 			else {
-				$doc->addScript(JURI::root(true) . '/plugins/system/uniform/js/jquery.uniform.js');
+				$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/jquery.uniform.js');
 				$doc->addStyleSheet(JURI::root(true) . '/plugins/system/uniform/themes/'.$theme.'/css/uniform.css');
 				$doc->addScriptDeclaration($loadUniform);
 			}
