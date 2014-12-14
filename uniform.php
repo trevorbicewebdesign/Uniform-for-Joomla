@@ -8,11 +8,30 @@ class plgSystemUniform extends JPlugin {
 	function onAfterInitialise()	{
 		$doc 			= JFactory::getDocument();
 		$noconflict		= $this->params->get('noconflict');	
-		$doc->addScript("//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js");
-		if($noconflict == 1) {
-			$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/noconflict.js');
+		$display			= $this->params->get('display');
+		$mainframe 		= JFactory::getApplication();
+		if($display=='front') {
+			if($mainframe->isSite()) {
+					$doc->addScript("//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js");
+					if($noconflict == 1) {
+						$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/noconflict.js');
+					}
+			}
 		}
-		
+		else if($display=='back') {
+			if(!$mainframe->isSite()) {
+				$doc->addScript("//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js");
+				if($noconflict == 1) {
+					$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/noconflict.js');
+				}
+			}
+		}
+		else {
+			if($noconflict == 1) {
+				$doc->addScript("//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js");
+				$doc->addScript(JURI::root(true) . '/plugins/system/uniform/assets/js/noconflict.js');
+			}
+		}
 	}
 	function onBeforeCompileHead()	{
 		$doc 		= JFactory::getDocument();
